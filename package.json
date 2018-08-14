@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --port 3000 --env development --open",
+    "start": "webpack-dev-server --hot --port 3000 --env development --open",
     "build": "webpack --env production"
   },
   "author": "",
@@ -20,6 +20,7 @@
     "optimize-js-plugin": "0.0.4",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-hot-loader": "^4.3.4",
     "style-loader": "^0.22.1",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",

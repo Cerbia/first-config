@@ -1,4 +1,5 @@
 import React from 'react';
+import { hot } from 'react-hot-loader';
 
 const TodoList = ({dataToPresent, action}) => 
 		<ul>

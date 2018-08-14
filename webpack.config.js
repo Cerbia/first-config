@@ -21,13 +21,15 @@ module.exports = (env) => {
         output: {
             path: path.resolve(__dirname, 'build'),
             filename: 'app.' + environment + '.bundle.js'
-            //filename: 'app.bundle.js'
         },
         module: {
             rules: [
                 {
                     test: /\.js$/,
-                    loader: "babel-loader"
+                    loader: "babel-loader",
+                    options: {
+                        plugins: env !== 'production' ? ["react-hot-loader/babel"] : []
+                    }
                 },
                 {
                     test: /\.css$/,
